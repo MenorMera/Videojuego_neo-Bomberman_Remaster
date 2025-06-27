@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neo Bomberman Remaster | El clásico reinventado</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stile.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Header y Navbar -->
+  <header>
+    <nav class="bg-black py-4 px-6 border-b-4 border-blue-500" role="navigation" aria-label="Menú principal">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="font-pixel text-blue-400 text-xl md:text-2xl" aria-label="Logo Neo Bomberman">NEO BOMBERMAN REMASTER</div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#about" class="hover:text-blue-400 transition" aria-label="Ir a El Juego">El Juego</a>
+          <a href="#features" class="hover:text-blue-400 transition" aria-label="Ir a Características">Características</a>
+          <a href="#screenshots" class="hover:text-blue-400 transition" aria-label="Ir a Galería">Galería</a>
+          <a href="#download" class="hover:text-blue-400 transition" aria-label="Ir a Descargar">Descargar</a>
+        </div>
+        <button class="md:hidden text-white" aria-label="Abrir menú móvil" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 px-4" aria-labelledby="hero-title">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 id="hero-title" class="font-pixel text-4xl md:text-6xl mb-6">NEO BOMBERMAN REMASTER</h1>
+          <p class="text-xl mb-8">El clásico juego de bombas reinventado con gráficos modernos y nuevas mecánicas.</p>
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#download" class="pixel-btn bg-blue-500 text-center" aria-label="Descargar ahora">Descargar ahora</a>
+            <a href="#about" class="pixel-btn bg-transparent border-white text-center" aria-label="Ver más sobre el juego">Ver más</a>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img src="https://placehold.co/600x400" alt="Personaje principal de Neo Bomberman con traje futurista en un laberinto 3D con bombas brillantes" class="rounded-lg shadow-2xl">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-gray-800" aria-labelledby="about-title">
+      <div class="container mx-auto">
+        <h2 id="about-title" class="font-pixel text-3xl mb-12 text-center text-blue-400">SOBRE EL JUEGO</h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <img src="https://placehold.co/500x300" alt="Escena de juego mostrando a 4 personajes compitiendo en un mapa lleno de obstáculos y bombas explotando" class="rounded-lg shadow-lg">
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <p class="mb-6 text-lg">Neo Bomberman Remaster es una reinvención moderna del clásico juego de estrategia y acción. Mantiene la esencia del juego original mientras añade nuevos elementos que lo llevan al siguiente nivel.</p>
+            <p class="mb-6 text-lg">Con gráficos completamente rediseñados, nuevas mecánicas de juego, personajes únicos y modos de juego innovadores, esta versión es tanto un homenaje como una evolución de la franquicia Bomberman.</p>
+            <div class="bg-gray-700 p-4 rounded-lg">
+              <h3 class="font-bold text-xl mb-2">Plataformas disponibles:</h3>
+              <ul class="list-disc pl-5">
+                <li>Windows (PC)</li>
+                <li>Android próximamente en la Play Store</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-4 bg-gray-900" aria-labelledby="features-title">
+      <div class="container mx-auto">
+        <h2 id="features-title" class="font-pixel text-3xl mb-12 text-center text-blue-400">CARACTERÍSTICAS</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-gray-800 rounded-lg p-6 game-card">
+            <div class="text-blue-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <title>Gráficos HD</title>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Gr&aacute;ficos HD</h3>
+            <p>Texturas HD y efectos visuales modernos que llevan la experiencia Bomberman remaster a un nuevo nivel.</p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="bg-gray-800 rounded-lg p-6 game-card">
+            <div class="text-blue-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <title>Multijugador Online</title>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Multijugador Online</h3>
+            <p>Hasta 4 jugadores pueden competir en línea en arenas con diferentes temáticas y condiciones especiales.</p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="bg-gray-800 rounded-lg p-6 game-card">
+            <div class="text-blue-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <title>Modo Historia</title>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Modo Historia</h3>
+            <p>Hasta 4 jugadores en arenas con diferentes temáticas y condiciones especiales.</p>
+          </div>
+          <!-- Feature 4 -->
+          <div class="bg-gray-800 rounded-lg p-6 game-card">
+            <div class="text-blue-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <title>Más de 50 power-ups</title>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Más de 50 power-ups</h3>
+            <p>Nuevos objetos especiales que modifican las reglas del juego temporalmente y añaden profundidad estratégica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="py-16 px-4 bg-gray-800" aria-labelledby="screenshots-title">
+      <div class="container mx-auto">
+        <h2 id="screenshots-title" class="font-pixel text-3xl mb-12 text-center text-blue-400">GALERÍA</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Screenshots (alt ya descriptivos) -->
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="https://placehold.co/600x400" alt="Captura de juego mostrando un mapa futurista con bloques destructibles y personajes colocando bombas" class="w-full h-auto hover:scale-105 transition duration-300 cursor-pointer">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="https://placehold.co/600x400" alt="Selección de personajes con diferentes trajes y habilidades especiales mostrados en estilo cartoon 3D" class="w-full h-auto hover:scale-105 transition duration-300 cursor-pointer">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="https://placehold.co/600x400" alt="Momento de explosión múltiple con efectos de partículas y luz mejorados en un escenario nocturno" class="w-full h-auto hover:scale-105 transition duration-300 cursor-pointer">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="https://placehold.co/600x400" alt="Modo de juego cooperativo con dos jugadores trabajando juntos contra enemigos controlados por IA" class="w-full h-auto hover:scale-105 transition duration-300 cursor-pointer">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="https://placehold.co/600x400" alt="Menú principal del juego con interfaz retro-futurista y sonidos clásicos rediseñados" class="w-full h-auto hover:scale-105 transition duration-300 cursor-pointer">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="https://placehold.co/600x400" alt="Mapa especial con temática espacial donde las bombas se ven afectadas por baja gravedad" class="w-full h-auto hover:scale-105 transition duration-300 cursor-pointer">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-20 px-4 hero-gradient" aria-labelledby="download-title">
+      <div class="container mx-auto text-center">
+        <h2 id="download-title" class="font-pixel text-4xl mb-8">DESCARGA NEO BOMBERMAN</h2>
+        <p class="text-xl mb-12 max-w-2xl mx-auto">Consigue ahora la versión más reciente del juego y revive la emoción con todas las nuevas características.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8 mb-16">
+          <!-- Download Game -->
+          <div class="bg-gray-800 p-8 rounded-lg w-full max-w-md">
+            <h3 class="text-2xl font-bold mb-4">Descargar el juego</h3>
+            <p class="mb-6">Versión actual: 1.2.0</p>
+            <a href="#" id="download-game" class="pixel-btn bg-green-600 hover:bg-green-700 w-full text-center" aria-label="Descargar el juego">Descargar Ahora (250MB)</a>
+          </div>
+          <!-- Download Web -->
+          <div class="bg-gray-800 p-8 rounded-lg w-full max-w-md">
+            <h3 class="text-2xl font-bold mb-4">Descargar página web</h3>
+            <p class="mb-6">Toda la página en formato ZIP</p>
+            <a href="#" id="download-web" class="pixel-btn bg-purple-600 hover:bg-purple-700 w-full text-center" aria-label="Descargar la web">Descargar Web (5MB)</a>
+          </div>
+        </div>
+        <div class="bg-black bg-opacity-30 p-6 rounded-lg max-w-3xl mx-auto">
+          <h4 class="font-bold text-xl mb-4">Requisitos del sistema</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+            <div>
+              <h5 class="font-semibold text-blue-400">Mínimos:</h5>
+              <ul class="list-disc pl-5">
+                <li>Windows 10 64-bit / MacOS 10.14+ / Ubuntu 18.04+</li>
+                <li>Intel Core i5-2500K o AMD equivalente</li>
+                <li>8GB RAM</li>
+                <li>NVIDIA GTX 660 / AMD Radeon HD 7870</li>
+                <li>2GB espacio en disco</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-semibold text-blue-400">Recomendados:</h5>
+              <ul class="list-disc pl-5">
+                <li>Windows 10 64-bit / MacOS 11+ / Ubuntu 20.04+</li>
+                <li>Intel Core i7-6700K o AMD equivalente</li>
+                <li>16GB RAM</li>
+                <li>NVIDIA GTX 1060 / AMD RX 580</li>
+                <li>5GB espacio en disco</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black py-8 px-4 border-t-4 border-blue-500" role="contentinfo">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="font-pixel text-blue-400 text-xl md:text-2xl">NEO BOMBERMAN</div>
+          <p class="text-gray-400 mt-2">© 2023 Todos los derechos reservados</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <title>Twitter</title>
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition" aria-label="Discord">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <title>Discord</title>
+              <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-4.762-.838-9.3-3.548-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <title>YouTube</title>
+              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Spinner de descarga -->
+    <div id="download-spinner" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50 hidden" role="alert" aria-live="assertive">
+      <div class="flex flex-col items-center">
+        <div class="loader mb-4"></div>
+        <span class="font-pixel text-xl text-blue-400">Descargando...</span>
+      </div>
+    </div>
+    <script src="scrit.js"></script>
+  </footer>
+</body>
+</html>

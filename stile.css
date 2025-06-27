@@ -1,0 +1,40 @@
+.font-pixel {
+    font-family: 'Press Start 2P', cursive;
+  }
+  .hero-gradient {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  }
+  .game-card {
+    transition: all 0.3s ease;
+  }
+  .game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  .pixel-btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 4px solid #fff;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.3s;
+  }
+  .pixel-btn:hover {
+    background: #fff;
+    color: #1e3c72;
+  }
+  .loader {
+    border: 8px solid #2a5298;
+    border-top: 8px solid #fff;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
